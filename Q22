@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+
+int C;
+float S=0,SN=0;    
+
+printf("Informe o cargo:\n");
+scanf("%d",&C);
+printf("informe o salario:\n");
+scanf("%f",&S);
+if(C==101){
+    SN=S+(S*0.1);
+    printf("Novo salario: %.2f\n",SN);
+    printf("Salario antigo: %.2f\n",S);
+    printf("Aumento: %.2f\n",SN-S);
+}else if(C=102){
+    SN=S+(S*0.2);       
+    printf("Novo salario: %.2f\n",SN);
+    printf("Salario antigo: %.2f\n",S);
+    printf("Aumento: %.2f\n",SN-S);
+}else if(cargo = 103){ 
+    SN=S+(S*0.3);
+    printf("Novo salario: %.2f\n",SN);
+    printf("Salario antigo: %.2f\n",S);
+    printf("Aumento: %.2f\n",SN-S);
+}else{
+    SN=S+(S*0.4);       
+    printf("Novo salario: %.2f\n",SN);
+    printf("Salario antigo: %.2f\n",S);
+    printf("Aumento: %.2f\n",SN-S);
+}
+
+    return 0;
+}

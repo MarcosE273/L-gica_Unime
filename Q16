@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+    int CD,QT;
+    float T;
+    
+    printf("Digite o codigo do pedido: \n");
+    scanf("%d",&CD);
+    printf("Digite a quantidade: \n");
+    scanf("%d",&QT);
+    if(CD==100){
+        T=QT*1.20;
+        printf("Total: %f\n",T);
+     }else if(CD==101){
+        T=QT*1.30;
+        printf("Total: %f\n",T);
+     } else if(CD==102){
+        T=QT*1.50;
+        printf("Total: %f\n",T);
+     } else if(CD==103){
+        T=QT*1.20;
+        printf("Total: %f\n",T);
+     } else if(CD==104){
+        T=QT*1.30;
+        printf("Total: %f\n",T);
+     } else if(CD==105){
+        T=QT*1.00;
+        printf("Total: %f\n",T);
+     } else{
+        printf("Opcao invalida!");
+     }
+
+    return 0;
+}

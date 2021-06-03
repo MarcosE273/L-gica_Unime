@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    float N1,N2,N3;
+    
+    scanf("%f %f %f",&N1,&N2,&N3);
+    if(N1>N2 && N1>N3){
+        printf("Maior numero: %d\n",N1);
+    }else if(N2>N1 && N2>N3){
+        printf("Maior numero: %d\n",N2);
+    }else{
+        printf("Maior numero: %d\n",N3);
+    }
+
+    return 0;
+}

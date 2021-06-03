@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+ 
+ int horai, minui, horaf, minuf;
+ 
+ printf("digite a hora de inicio: ");
+ scanf("%d",&horai);
+ printf("digite os minutos de inicio: ");
+ scanf("%d",&minui);
+ printf("digite a hora de fim: ");
+ scanf("%d",&horaf);
+ printf("digite os minutos do fim: ");
+ scanf("%d",&minuf);
+ if(horaf <= horai){
+    horaf = (horaf + 24) - horai; 
+ }else{
+    horaf = horaf - horai;
+ }
+ minuf = abs(minuf - minui);
+ printf("A duracao do jogo foi de %d horas e %d minutos" , horaf, minuf);
+ 
+ return 0;
+ 
+}

@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <math.h>
+#include <string.h>
+
+int main()
+{
+    float M,C;
+    
+    scanf("%f",&M);
+    case(M){
+        case(M>=0 && M<=200){
+            C=(M*0);
+            printf("Saldo medio = %.2f\n",M);
+            printf("Valor do credito = %.2f\n",C);
+        }
+        case(M>=201 && M<=400){
+            C=(M*0,2);
+            printf("Saldo medio = %.2f\n",M);
+            printf("Valor do credito = %.2f\n",C);
+        }
+        case(M>=401 && M<=600){
+            C=(M*0,3);
+            printf("Saldo medio = %.2f\n",M);
+            printf("Valor do credito = %.2f\n",C);
+        }
+        case(M>=601){
+            C=(M*0,4);
+            printf("Saldo medio = %.2f\n",M);
+            printf("Valor do credito = %.2f\n",C);
+        }
+    }
+
+    return 0;
+}

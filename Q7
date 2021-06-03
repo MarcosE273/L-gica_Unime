@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int PD=29,PI=47;
+    float CF,VD,VI,CC;
+    
+    printf("Valor do custo de fábrica: \n");
+    scanf("%f",&CF);
+    VD=CF+(CF*PD/100);
+    VI=CF+(CF*PI/100);
+    CC=CF+VD+VI;
+    printf("O custo ao consumidor: %f \n",CC);
+
+    return 0;
+}

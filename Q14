@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int CA;
+    float N1,N2,N3,M;
+    
+    printf("Codigo do aluno: \n");
+    scanf("%d",&CA);
+    printf("Notas:\n");
+    scanf("%f %f %f",&N1,&N2,&N3);
+    if(N1>N2 && N1>N3){
+        M=((N1*4)+(N2*3)+(N3*3))/10;
+    }else if(N2>N1 && N2>N3){
+        M=((N2*4)+(N1*3)+(N3*3))/10;
+    }else if(N3>N1 && N3>N2){
+        M=((N3*4)+(N1*3)+(N2*3))/10;
+    }
+    if(M>=5){
+        printf("CODIGO = %d\n",CA);
+        printf("NOTA 1 = %.2f\n",N1);
+        printf("NOTA 2 = %.2f\n",N2);
+        printf("NOTA 3 = %.2f\n",N3);
+        printf("MEDIA = %.2f\n",M);
+        printf("APROVADO\n");
+    }else if (M<5){
+        printf("CODIGO = %d\n",CA);
+        printf("NOTA 1 = %.2f\n",N1);
+        printf("NOTA 2 = %.2f\n",N2);
+        printf("NOTA 3 = %.2f\n",N3);
+        printf("MEDIA = %.2f\n",M);
+        printf("REPROVADO\n");
+    }
+
+    return 0;
+    
+}

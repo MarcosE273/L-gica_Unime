@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<math.h>
+#include<string.h>
+
+int main()
+{
+ 
+    float indice;
+    
+    printf("digite o indice de poluicao: \n");
+    scanf("%f",&indice);
+    if(indice>=0.05 && indice<=0.25){
+        printf("indice dentro dos padroes aceitaveis.\n");
+    }else if(indice>0.25 && indice<0.4){
+        printf("paraliza as atividades somente do 1 grupo.\n");
+    }else if(indice>=0.4 && indice<0.5){
+        printf("paraliza as atividades dos grupos 1 e 2.\n");
+    }else{
+        printf("paraliza as atividades dos 3 grupos de industrias.\n");
+    }
+ 
+ return 0;
+ 
+}

@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int D,M,A,I;
+    
+    printf("Idade em dias: \n");
+    scanf("%d",&I);
+    A=D/365;
+    M=(D%365)/30;
+    D=(D%365)%30;
+    printf("Idade em dias: %d ano(s), %d mes(es) e %d dia(s)\n",A,M,D);
+
+    return 0;
+}

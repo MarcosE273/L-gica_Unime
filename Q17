@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    float A,P;
+    char S;
+    
+    printf("Sexo: (f) Feminino (m) Masculino\n");
+    scanf("%s",&S);
+    printf("Altura:\n");
+    scanf("%f",&A);
+    if(S=='m'){
+        P=((72.7*A)-58);
+        printf("Seu peso ideal: %.3f kilos\n");
+    }else if(S=='f'){
+        P=((62.1*A)-44.7);
+        printf("Seu peso ideal: %.3f kilos\n");
+    }else{
+        printf("Invalido!");
+    }
+
+    return 0;
+}

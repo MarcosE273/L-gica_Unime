@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+    int CD,QT;
+    float T;
+    
+    printf("Digite o codigo do pedido: \n");
+    scanf("%d",&CD);
+    printf("Digite a quantidade: \n");
+    scanf("%d",&QT);
+    switch (CD)
+        {
+        	case 1001:
+                T=5.32*QT;
+                printf("O valor a ser pago: %.2f",T);
+        	break;
+        	case 1324:
+                T=6.45*QT;
+                printf("O valor a ser pago: %.2f",T);
+        	break;
+        	case 6548:
+                T=2.37*QT;
+                printf("O valor a ser pago: %.2f",T);
+        	break;
+        	case 0987:
+                T=5.32*QT;
+                printf("O valor a ser pago: %.2f",T);
+        	break;
+        	case 7623:
+                T=6.45*QT;
+                printf("O valor a ser pago: %.2f",T);
+        	break;
+        	default:
+                printf ("Invalido.\n");
+        }
+
+    return 0;
+}
